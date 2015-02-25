@@ -1,0 +1,18 @@
+{% include 'header.html' %}
+
+<html>
+
+<div id="results">
+<form action="/logout">
+	<h2>Profile</h2>
+		<hr>
+	<h3>User name: {{data["username"]}}</h3>
+
+		<button type="submit" class="btn btn-lg btn-danger">Log Out</button>
+	
+</form>
+</div>
+
+</html>
+
+{% include 'footer.html' %}

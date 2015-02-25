@@ -1,0 +1,8 @@
+{% for item in data %}
+
+{{item[1]}}
+<a href="/editForm/{{item[0]}}">EDIT </a>
+<a href="/deleteUser/{{item[0]}}">DELETE </a>
+<br>
+
+{% endfor %}

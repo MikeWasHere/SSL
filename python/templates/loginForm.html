@@ -1,0 +1,16 @@
+{% for item in data %}
+
+{{item[0]}} {{item[1]}}<br>
+
+{% endfor %}
+
+
+<html>
+<form action="/processForm/3" enctype="multipart/form-data" method="POST">
+
+	<input type="text" name="firstname"/>
+	<input type="file" name="los_files"/>
+	<input type="submit">
+	
+</form>
+</html>

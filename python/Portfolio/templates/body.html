@@ -1,8 +1,11 @@
+{% include 'header.html' %}
+
 <div class="header alt vert">
   <div class="container">
     
-    <h1>CapitalCity</h1>
-      <p class="lead">Starter Template for Bootstrap 3</p>
+    <span class="hi">Hi There, Im</span>
+    <h1>Michael Perez</h1>
+      <p class="hi">and I make awesome web stuff.</p>
       <div>&nbsp;</div>
       <!-- Small modal -->
 <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Sign in</button> -->
@@ -23,7 +26,7 @@
        <div class="modal-body">
 
 	
-	<form enctype="multipart/form-data" action="?controller=home&action=processLogin" method="POST">
+	<form enctype="multipart/form-data" action="/processForm" method="POST">
 		<ul>
 		<li class="width">
 			<label for="username" class="label_text">User Name: </label>
@@ -71,7 +74,7 @@
       
        <div class="modal-body">
 	
-	<form enctype="multipart/form-data" action="?controller=home&action=addUser" id="register" method="POST">
+	<form enctype="multipart/form-data" action="/addUser" id="register" method="POST">
 
 	  <ul>
 		<li class="reg">
@@ -120,7 +123,7 @@
         </li>
       </ul>
         
-	<input id="file" type="file" name="files"/>	
+	<input id="file" type="file" name="los_files"/>	
 	<input id="sub" class="btn btn-default" type="submit"/>
 </form>
 
@@ -376,3 +379,5 @@
     </div>
   </div>
 </div>
+
+{% include 'footer.html' %}

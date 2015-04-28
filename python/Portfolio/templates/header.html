@@ -1,0 +1,72 @@
+<html>
+	<header>
+		<link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/static/style.css">    
+	    <link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900' rel='stylesheet' type='text/css'>
+	</header>
+	
+	<style>
+	.modal-backdrop{
+		z-index: 0;
+	}
+	
+	.modal-footer{
+	padding-bottom: 0;
+	}
+	
+	
+	</style>
+	
+	<body>
+	
+<!--
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid" id="navbar">
+  	  <div class="navbar-header">
+    	<ul class="nav navbar-nav" >
+		    {% if not session.logged %}
+		    <li><a href="#" >Home</a></li>
+		    <li><a href="#" >About</a></li>
+		    <li><a href="#" >Projects</a></li>
+		    <li><a data-toggle="modal" data-target="#myModal">process</a></li>
+	        <li><a href="#" data-toggle="modal" data-target="#myModal2" >Contact us</a></li>
+	        {% else %}
+	        <li><a href="/editForm/<id>" >Profile</a></li>
+	        <li><a href="/upload" >Update users</a></li>
+			<li><a type="submit" >Logout</a></li>        
+	        {% endif %}
+    	</ul>
+  	  </div>
+  </div>
+</nav>
+-->
+	
+<div class="navbar navbar-fixed-top alt" data-spy="affix" data-offset-top="1000">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="?controller=home&action=home" class="navbar-brand">Home</a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        
+        {% if not session.logged %}
+		    <li><a href="#" >About</a></li>
+		    <li><a href="#" >Projects</a></li>
+		    <li><a data-toggle="modal" data-target="#myModal">process</a></li>
+	        <li><a href="#" data-toggle="modal" data-target="#myModal2" >Contact us</a></li>
+	        {% else %}
+	        <li><a href="/editForm/<id>" >Profile</a></li>
+	        <li><a href="/upload" >Update users</a></li>
+			<li><a type="submit" >Logout</a></li>          
+        {% endif %}
+
+      </ul>
+    </div>
+   </div>
+</div>

@@ -21,12 +21,15 @@ body {
 /* use special fonts in certain elements */
 h1,h2,h3,h4,.lead,.btn,.navbar a {
   text-transform:uppercase;
-  font-family:'Voltaire',Arial,sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 900;
   letter-spacing:2px;
 }
 
 h1 {
   font-size:50px;
+  -webkit-mask-image: url("http://i.imgur.com/vXoQTtW.png");
+  
 }
 
 /* make images gray */
@@ -111,7 +114,7 @@ img.grayscale {
 
 .header {
   height: 80%;
-  background: #f68076 url('http://www.bootply.com/assets/example/pt_topo_l.png') repeat center center fixed;
+  background: #f58076 url('http://www.bootply.com/assets/example/pt_topo_l.png') repeat center center fixed;
 }
 
 /* use alt in navbar and header for different color */
@@ -144,7 +147,7 @@ img.grayscale {
 }
 
 .bright {
-  background: #dbdbdb url('http://www.bootply.com/assets/example/pt_topo.png') repeat center center fixed; 
+  background: #dcdcdc url('http://www.bootply.com/assets/example/pt_topo.png') repeat center center fixed; 
   color:#777;
 }
 
@@ -205,8 +208,19 @@ footer {
 
 /* -- end custom css for Bootstrap 3.x --*/
 
-/* -- Mikes CSS --*/
 
+
+
+
+/* ----------*********** Mikes CSS ***********----------*/
+
+/*-- NAV BAR --*/
+#navbar{
+	text-align: center;
+	background-color: #aa3333;
+}
+
+/* -- login and register modal inputs --*/
 ul{
 	list-style: none;
 	padding-left: 0;
@@ -222,55 +236,6 @@ label{
 	text-align: right;
 }
 
-.sb{
-	background: #aa3333 url('http://www.bootply.com/assets/example/pt_topo_l.png') repeat center center fixed;
-}
-
-#results{
-	background-color: white;
-	width: 50%;
-	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
-	padding: 20px;
-	margin: 0 auto;
-	font-size: 1.5em;
-}
-
-.head{
-	background: white;
-	font-size: 3em;
-	width: 50%;
-	margin: 5% auto 0 auto !important;
-	text-align: center;
-	font-family:'Voltaire',Arial,sans-serif;
-}
-
-.exp{
-	width: 30%;
-	display: inline-block;
-	text-align: right;
-	padding-right: 5px;
-	margin: 0 !important;
-	margin-bottom: 0 !important;
-}
-
-b{
-	font-family:'Voltaire',Arial,sans-serif;
-	font-size: 1.4em;
-}
-
-.exposed{
-	width: 60%;
-	margin: 0 auto;
-}
-
-#logouut{
-	margin-left: 43%;
-}
-
-#register{
-	
-}
 
 #file{
 	margin-left: 35%;
@@ -286,34 +251,61 @@ b{
 	margin: 5%;
 	margin-left: 45%;
 }
+/* -- login and register modal inputs END--*/
+
+
+b{
+	font-family:'Voltaire',Arial,sans-serif;
+	font-size: 1.4em;
+}
+
+.hi{
+	color: #8a1212;
+	font-size: 3em;
+	font-family: 'Alegreya', serif;
+}
+
+/*--- RESULTS PAGE ---*/
+
+#results{
+	background-color: white;
+	width: 50%;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding: 20px;
+	margin: 5% auto 2% auto;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.half-line{
+	width: 25%;
+	display: inline-block;
+	margin-bottom: 10px;
+	border-top: 3px black solid;
+}
+
+form h2{
+	position: relative;
+	top: 50px;
+	font-size: 1em;
+}
 
 form h3{
 	text-align: center;
-	margin-bottom: 5%;
-}
-
-#upDe{
-	width: 50%;
-	border: 5px rgba(0,0,0,0.11) solid;
-	border-radius: 10px;
-	margin: 5% 0 0 25%;
-	padding: 10px;
 	font-size: 2em;
-	text-align: center;
-}
-
-#delete{
 	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	display: inline-block;
 }
 
-#update{
-	margin-left: 5%;
+#proImg{
+	position: relative;
+	left: 1px;
 }
 
-#AU{
-	margin-bottom: 4%;
+#logout{
+	margin-top: 50px;
 }
-
-#upForm{
-	margin-top: 5%;
-}
+/*--- RESULTS PAGE END ---*/

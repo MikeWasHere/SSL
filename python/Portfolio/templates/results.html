@@ -1,0 +1,24 @@
+{% include 'header.html' %}
+
+<html>
+
+<div id="weather">
+	<h3>{{item[0]}}</h3>
+</div>
+
+
+<div id="results">
+<form action="/logout">
+	<h2>Hello</h2>
+		<br>
+	<hr class="half-line"> <h3> {{data[0][0]}} </h3> <hr class="half-line">
+	<img src="/static/uploads/{{data[0][2]}}" id="proImg" class="img-circle" alt="profile picture" width="140" height="140"/> <br>
+
+		<button type="submit" id="logout" class="btn btn-lg btn-danger">Log Out</button>
+	
+</form>
+</div>
+
+</html>
+
+{% include 'footer.html' %}
